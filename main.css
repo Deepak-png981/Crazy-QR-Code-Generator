@@ -3,7 +3,7 @@
     padding: 0;
     font-family:'Lato';
     letter-spacing: 1px;
-   
+    background-color: rgb(12, 163, 233);
 }
 .container{
     width: 100%;
@@ -11,24 +11,29 @@
     background-color: rgb(12, 163, 233);
     text-align: center;
     display: flex;
+    flex-wrap:inherit;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-a{
-    text-decoration: none;
-}
+/* .heading{
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 15%;
+} */
 h1{
-    font-size: 5vh;
+    font-size: 198%;
+    
 }
 .box{
     padding: 20px 0;
-    display: flex;
+    display:inline;
     justify-content: center;
     align-items: center;
 }
 input{
-    width: 400px;
+    width: 60vw;
     height: 30px;
     padding: 15px;
     font-size: 22px;
@@ -42,7 +47,19 @@ input{
 #input::placeholder{
     color: rgb(68, 0, 255);
 }
-button{
+#qr-code{
+    font-size: 3vh;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgb(128, 0, 255);
+    color: white;
+    border: 4px white solid;
+    outline: none;
+    border-radius: 4px;
+}
+/* for enlarge button */
+#DeepakButton{
     font-size: 3vh;
     padding: 8px 20px;
     cursor: pointer;
@@ -73,4 +90,8 @@ button{
 }
 #DeepakButton{
     display: none;
+}
+a{
+    margin-top: 30px;
+    text-decoration: none;
 }
